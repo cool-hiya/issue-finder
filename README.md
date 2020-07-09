@@ -1,1 +1,1 @@
-# issue-finder
+# Issue finder
