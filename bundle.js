@@ -3917,25 +3917,25 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 
 /***/ }),
 
-/***/ "./index.js":
+/***/ "./index.ts":
 /*!******************!*\
-  !*** ./index.js ***!
+  !*** ./index.ts ***!
   \******************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('hi');\n\n//# sourceURL=webpack:///./index.js?");
+eval("console.log('hi');\n\n//# sourceURL=webpack:///./index.ts?");
 
 /***/ }),
 
 /***/ 1:
 /*!********************************************************************************************************!*\
-  !*** multi ../node_modules/webpack-dev-server/client?http://localhost:4200 @babel/polyfill ./index.js ***!
+  !*** multi ../node_modules/webpack-dev-server/client?http://localhost:4200 @babel/polyfill ./index.ts ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\Arina\\Desktop\\issue-finder\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:4200 */\"../node_modules/webpack-dev-server/client/index.js?http://localhost:4200\");\n__webpack_require__(/*! @babel/polyfill */\"../node_modules/@babel/polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./index.js */\"./index.js\");\n\n\n//# sourceURL=webpack:///multi_../node_modules/webpack-dev-server/client?");
+eval("__webpack_require__(/*! C:\\Users\\Arina\\Desktop\\issue-finder\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:4200 */\"../node_modules/webpack-dev-server/client/index.js?http://localhost:4200\");\n__webpack_require__(/*! @babel/polyfill */\"../node_modules/@babel/polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./index.ts */\"./index.ts\");\n\n\n//# sourceURL=webpack:///multi_../node_modules/webpack-dev-server/client?");
 
 /***/ })
 
