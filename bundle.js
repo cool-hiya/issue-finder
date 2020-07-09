@@ -457,7 +457,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('hi');\r\n\n\n//# sourceURL=webpack:///./index.ts?");
+eval("throw new Error(\"Module build failed (from ../node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open 'C:\\\\Users\\\\Arina\\\\Desktop\\\\issue-finder\\\\src\\\\index.ts'\");\n\n//# sourceURL=webpack:///./index.ts?");
 
 /***/ }),
 
