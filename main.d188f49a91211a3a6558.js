@@ -3924,7 +3924,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./index.js?");
+eval("console.log('hi');\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
