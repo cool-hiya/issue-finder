@@ -31,7 +31,7 @@ export default class IssueListController extends Controller {
             const date = issue.querySelector('.issue__date');
 
             title.textContent = data.title;
-            number.textContent = data.number;
+            number.textContent = `#${data.number}`;
             date.textContent = new Date(Date.parse(data.creationDate)).toLocaleString();
 
             this.container.append(issue);
