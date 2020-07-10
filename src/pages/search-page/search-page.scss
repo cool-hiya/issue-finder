@@ -1,0 +1,15 @@
+.search-page {
+    .loader {
+        display: none;
+    }
+
+    &[data-search-page-loading="true"] {
+        .loader {
+            display: block;
+        }
+
+        .issue-list {
+            display: none;
+        }
+    }
+}

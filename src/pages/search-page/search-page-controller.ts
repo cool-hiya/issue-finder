@@ -16,6 +16,8 @@ export default class SearchPageController extends Controller {
     }
 
     async search(e: CustomEvent) {
+        this.data.set('loading', 'true');
+
         const {name, repo} = e.detail;
 
         const res = await fetch(`https://api.github.com/repos/${name}/${repo}/issues`);
@@ -28,6 +30,8 @@ export default class SearchPageController extends Controller {
         }));
 
         this.issueListController.updateIssues.next(this.issues);
+
+        setTimeout(() => this.data.set('loading', 'false'), 100);
     }
 }
 
