@@ -19,7 +19,8 @@
   100% {
     transform: rotate(360deg); } }
 
-.search-page .loader {
+.search-page .loader,
+.search-page .error {
   display: none; }
 
 .search-page[data-search-page-loading="true"] .loader {
@@ -27,6 +28,9 @@
 
 .search-page[data-search-page-loading="true"] .issue-list {
   display: none; }
+
+.search-page[data-search-page-error="true"] .error {
+  display: block; }
 
 body {
   background-color: blueviolet; }
