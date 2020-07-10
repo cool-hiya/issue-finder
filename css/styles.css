@@ -25,11 +25,12 @@
   color: #dd0b0b; }
 
 .issue {
-  box-shadow: 0 0 0 1px #424242;
+  border: 1px solid #424242;
   padding: 15px; }
 
 .issue-list {
-  box-shadow: 0 0 0 1px #424242; }
+  display: grid;
+  grid-gap: 20px; }
 
 .search-form {
   display: grid;
