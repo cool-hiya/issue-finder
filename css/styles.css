@@ -19,8 +19,8 @@
   100% {
     transform: rotate(360deg); } }
 
-.error__text:after {
-  content: "&#128546;"; }
+.error__text {
+  text-transform: uppercase; }
 
 .search-form {
   display: grid;
