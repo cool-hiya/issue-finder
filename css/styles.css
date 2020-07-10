@@ -20,7 +20,7 @@
     transform: rotate(360deg); } }
 
 .search-page[data-loading="true"] {
-  color: blue; }
+  background-color: blue; }
 
 body {
   background-color: blueviolet; }
