@@ -24,6 +24,9 @@
   margin-right: 10px;
   color: #dd0b0b; }
 
+.issue {
+  border: 1px solid #424242; }
+
 .search-form {
   display: grid;
   grid-template-columns: 1fr 1fr 150px;
