@@ -28,7 +28,8 @@
     border: 0;
     border-bottom: 1px solid #424242;
     outline: 0;
-    margin-right: 40px; }
+    margin-right: 25px;
+    width: 100%; }
 
 .search-page .loader,
 .search-page .error {
