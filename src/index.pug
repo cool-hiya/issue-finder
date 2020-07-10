@@ -1,8 +1,14 @@
-  
+include vendor/bemto/bemto.pug
+
 doctype html
 head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title ISSUE finder
 body
-    h1 test page
+    h1 Issue finder
+    include ./pages/search-page/search-page.pug
+
+
+    //- https://api.github.com/users/cool-hiya/repos - issues_url взять и получить ответ
+    //- https://api.github.com/repos/cool-hiya/fcd/issues

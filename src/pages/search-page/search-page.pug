@@ -1,0 +1,4 @@
+include ../../components/search-form/search-form.pug
+
++b.search-page(data-controller="search-page")
+    +search-form()(data-action="submit->search-page#search")

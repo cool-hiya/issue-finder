@@ -20,6 +20,9 @@ module.exports = {
         writeToDisk: true,
         open: true
     },
+    resolve: {
+        extensions: ['.ts', '.js'],
+    },
     module: {
         rules: [
             {
@@ -31,7 +34,8 @@ module.exports = {
                         presets: [
                             '@babel/preset-env',
                             '@babel/preset-typescript'
-                        ]
+                        ],
+                        plugins: ["@babel/plugin-proposal-class-properties"]
                     }
                 }
             },
