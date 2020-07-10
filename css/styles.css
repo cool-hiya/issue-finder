@@ -29,7 +29,8 @@
     border-bottom: 1px solid #424242;
     outline: 0;
     margin-right: 25px;
-    width: 100%; }
+    width: 100%;
+    padding: 2px 5px; }
 
 .search-page .loader,
 .search-page .error {
