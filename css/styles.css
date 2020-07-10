@@ -31,15 +31,15 @@
     margin-right: 25px;
     width: 100%;
     padding: 10px;
-    font-size: inherit; }
+    font-size: 14px; }
     .search-form__field:focus {
       border-color: #8be05a; }
     .search-form__field:-ms-input-placeholder {
       text-transform: uppercase;
-      font-size: inherit; }
+      font-size: 14px; }
     .search-form__field::placeholder {
       text-transform: uppercase;
-      font-size: inherit; }
+      font-size: 14px; }
 
 .search-page .loader,
 .search-page .error {
