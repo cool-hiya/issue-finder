@@ -28,7 +28,11 @@
   border: 1px solid #424242;
   padding: 15px; }
   .issue__title {
-    color: #458d1b; }
+    color: #458d1b;
+    margin-bottom: 10px; }
+  .issue__details {
+    font-size: 14px;
+    text-transform: uppercase; }
   .issue__number {
     margin-right: 15px; }
 
