@@ -25,7 +25,7 @@
   grid-gap: 25px; }
   .search-form__field {
     border: 0;
-    border-bottom: 1px solid #424242;
+    border-bottom: 2px solid #424242;
     outline: 0;
     padding: 10px;
     font-size: 14px; }
@@ -40,7 +40,7 @@
   .search-form__submit {
     background-color: white;
     cursor: pointer;
-    border: 1px solid #424242;
+    border: 2px solid #424242;
     text-transform: uppercase;
     outline: 0; }
     .search-form__submit:hover {
