@@ -42,7 +42,8 @@
     cursor: pointer;
     border: 1px solid #424242; }
     .search-form__submit:hover {
-      background-color: #8be05a; }
+      background-color: #8be05a;
+      color: white; }
 
 .search-page .loader,
 .search-page .error {
