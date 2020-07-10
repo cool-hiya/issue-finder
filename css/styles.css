@@ -19,7 +19,7 @@
   100% {
     transform: rotate(360deg); } }
 
-.search-page[data-loading="true"] {
+.search-page[data-search-page-loading="true"] {
   background-color: blue; }
 
 body {
