@@ -40,7 +40,8 @@
 
 .search-page__top {
   position: sticky;
-  top: 0; }
+  top: 0;
+  background-color: white; }
 
 body {
   margin: 0;
