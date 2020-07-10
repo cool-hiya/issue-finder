@@ -31,12 +31,11 @@
     color: #458d1b;
     margin-bottom: 10px; }
   .issue__details {
-    font-size: 14px;
-    text-transform: uppercase; }
+    font-size: 14px; }
   .issue__number {
     margin-right: 10px; }
   .issue__date:before {
-    content: "opened at"; }
+    content: "opened at "; }
 
 .issue-list__container {
   display: grid;
