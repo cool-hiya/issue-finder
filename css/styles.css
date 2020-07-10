@@ -50,6 +50,8 @@
       background-color: #424242;
       color: white;
       transition: all 0.3s; }
+  .search-form__error {
+    grid-column: 1/3; }
 
 .search-page .loader,
 .search-page .error {
