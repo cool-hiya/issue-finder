@@ -35,7 +35,8 @@
 body {
   margin: 0;
   font-size: 18px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  color: #3f3f3f; }
 
 .container {
   max-width: 800px;
