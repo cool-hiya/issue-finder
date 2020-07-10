@@ -1,7 +1,8 @@
 mixin search-form()
     +b.FORM.search-form(data-controller="search-form")&attributes(attributes)
         +e.field
-            input(type="text" placeholder="User name" data-target="search-form.name")
+            input(type="text" placeholder="User name" data-target="search-form.name" data-action="focus->search-form#clearError")
         +e.field
-            input(type="text" placeholder="User repo" data-target="search-form.repo")
+            input(type="text" placeholder="User repo" data-target="search-form.repo" data-action="focus->search-form#clearError")
         +e.BUTTON.submit(type="submit" data-action="search-form#submit") Search
+        +e.error(data-target="search-form.error" hidden)
