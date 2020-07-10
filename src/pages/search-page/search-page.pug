@@ -1,4 +1,6 @@
 include ../../components/search-form/search-form.pug
+include ../../components/issue-list/issue-list.pug
 
 +b.search-page(data-controller="search-page")
     +search-form()(data-action="submit->search-page#search")
+    +issue-list()(data-target="search-page.issueList")

@@ -1,0 +1,9 @@
+include ../issue/issue.pug
+
+mixin issue-list()
+    +b.issue-list(data-controller="issue-list")&attributes(attributes)
+        +e.container(data-target="issue-list.container")
+
+        template(data-target="issue-list.template")
+            +issue()
+

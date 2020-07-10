@@ -38,7 +38,8 @@
     "@types/webpack-env": "^1.15.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.10.1"
+    "@babel/polyfill": "^7.10.1",
+    "rxjs": "^6.6.0"
   },
   "author": "Arina",
   "license": "ISC",

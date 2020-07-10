@@ -1,6 +1,5 @@
 export default interface Issue {
-    number: number,
+    number: string,
     creationDate: string,
-    title: string,
-    description: string
+    title: string
 }
