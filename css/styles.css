@@ -19,6 +19,9 @@
   100% {
     transform: rotate(360deg); } }
 
+.error__text:after {
+  content: ":("; }
+
 .search-form {
   display: grid;
   grid-template-columns: 1fr 1fr 150px;
