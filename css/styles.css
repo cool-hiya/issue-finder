@@ -25,7 +25,8 @@
   color: #dd0b0b; }
 
 .issue {
-  border: 1px solid #424242; }
+  border: 1px solid #424242;
+  padding: 15px; }
 
 .search-form {
   display: grid;
