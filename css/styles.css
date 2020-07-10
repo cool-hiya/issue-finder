@@ -32,7 +32,7 @@
     width: 100%;
     padding: 10px; }
     .search-form__field:focus {
-      border-bottom: #8be05a; }
+      border-color: #8be05a; }
 
 .search-page .loader,
 .search-page .error {
