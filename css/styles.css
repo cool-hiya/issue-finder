@@ -30,13 +30,16 @@
     outline: 0;
     margin-right: 25px;
     width: 100%;
-    padding: 10px; }
+    padding: 10px;
+    font-size: inherit; }
     .search-form__field:focus {
       border-color: #8be05a; }
     .search-form__field:-ms-input-placeholder {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: inherit; }
     .search-form__field::placeholder {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: inherit; }
 
 .search-page .loader,
 .search-page .error {
