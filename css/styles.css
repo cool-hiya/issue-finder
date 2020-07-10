@@ -22,8 +22,8 @@
 .search-form {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
+  -ms-flex-align: end;
+      align-items: flex-end; }
   .search-form__field {
     border: 0;
     border-bottom: 1px solid #424242;
