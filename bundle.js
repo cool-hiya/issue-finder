@@ -458,6 +458,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "../node_modules/@stimulus/webpack-helpers/dist/index.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/@stimulus/webpack-helpers/dist/index.js ***!
+  \***************************************************************/
+/*! exports provided: definitionsFromContext, identifierForContextKey */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"definitionsFromContext\", function() { return definitionsFromContext; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"identifierForContextKey\", function() { return identifierForContextKey; });\nfunction definitionsFromContext(context) {\n    return context.keys()\n        .map(function (key) { return definitionForModuleWithContextAndKey(context, key); })\n        .filter(function (value) { return value; });\n}\nfunction definitionForModuleWithContextAndKey(context, key) {\n    var identifier = identifierForContextKey(key);\n    if (identifier) {\n        return definitionForModuleAndIdentifier(context(key), identifier);\n    }\n}\nfunction definitionForModuleAndIdentifier(module, identifier) {\n    var controllerConstructor = module.default;\n    if (typeof controllerConstructor == \"function\") {\n        return { identifier: identifier, controllerConstructor: controllerConstructor };\n    }\n}\nfunction identifierForContextKey(key) {\n    var logicalName = (key.match(/^(?:\\.\\/)?(.+)(?:[_-]controller\\..+?)$/) || [])[1];\n    if (logicalName) {\n        return logicalName.replace(/_/g, \"-\").replace(/\\//g, \"--\");\n    }\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPQSxNQUFNLGlDQUFpQyxPQUEwQztJQUMvRSxPQUFPLE9BQU8sQ0FBQyxJQUFJLEVBQUU7U0FDbEIsR0FBRyxDQUFDLFVBQUEsR0FBRyxJQUFJLE9BQUEsb0NBQW9DLENBQUMsT0FBTyxFQUFFLEdBQUcsQ0FBQyxFQUFsRCxDQUFrRCxDQUFDO1NBQzlELE1BQU0sQ0FBQyxVQUFBLEtBQUssSUFBSSxPQUFBLEtBQUssRUFBTCxDQUFLLENBQWlCLENBQUE7QUFDM0MsQ0FBQztBQUVELDhDQUE4QyxPQUEwQyxFQUFFLEdBQVc7SUFDbkcsSUFBTSxVQUFVLEdBQUcsdUJBQXVCLENBQUMsR0FBRyxDQUFDLENBQUE7SUFDL0MsSUFBSSxVQUFVLEVBQUU7UUFDZCxPQUFPLGdDQUFnQyxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsRUFBRSxVQUFVLENBQUMsQ0FBQTtLQUNsRTtBQUNILENBQUM7QUFFRCwwQ0FBMEMsTUFBd0IsRUFBRSxVQUFrQjtJQUNwRixJQUFNLHFCQUFxQixHQUFHLE1BQU0sQ0FBQyxPQUFPLENBQUE7SUFDNUMsSUFBSSxPQUFPLHFCQUFxQixJQUFJLFVBQVUsRUFBRTtRQUM5QyxPQUFPLEVBQUUsVUFBVSxZQUFBLEVBQUUscUJBQXFCLHVCQUFBLEVBQUUsQ0FBQTtLQUM3QztBQUNILENBQUM7QUFFRCxNQUFNLGtDQUFrQyxHQUFXO0lBQ2pELElBQU0sV0FBVyxHQUFHLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyx3Q0FBd0MsQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFBO0lBQ2xGLElBQUksV0FBVyxFQUFFO1FBQ2YsT0FBTyxXQUFXLENBQUMsT0FBTyxDQUFDLElBQUksRUFBRSxHQUFHLENBQUMsQ0FBQyxPQUFPLENBQUMsS0FBSyxFQUFFLElBQUksQ0FBQyxDQUFBO0tBQzNEO0FBQ0gsQ0FBQyJ9\n\n//# sourceURL=webpack:///../node_modules/@stimulus/webpack-helpers/dist/index.js?");
+
+/***/ }),
+
 /***/ "../node_modules/ansi-html/index.js":
 /*!******************************************!*\
   !*** ../node_modules/ansi-html/index.js ***!
@@ -4066,6 +4078,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sti
 
 /***/ }),
 
+/***/ "../node_modules/stimulus/webpack-helpers.js":
+/*!***************************************************!*\
+  !*** ../node_modules/stimulus/webpack-helpers.js ***!
+  \***************************************************/
+/*! exports provided: definitionsFromContext, identifierForContextKey */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @stimulus/webpack-helpers */ \"../node_modules/@stimulus/webpack-helpers/dist/index.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"definitionsFromContext\", function() { return _stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_0__[\"definitionsFromContext\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"identifierForContextKey\", function() { return _stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_0__[\"identifierForContextKey\"]; });\n\n\n\n\n//# sourceURL=webpack:///../node_modules/stimulus/webpack-helpers.js?");
+
+/***/ }),
+
 /***/ "../node_modules/strip-ansi/index.js":
 /*!*******************************************!*\
   !*** ../node_modules/strip-ansi/index.js ***!
@@ -4277,6 +4301,17 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 
 /***/ }),
 
+/***/ "./components sync recursive \\.ts$":
+/*!*******************************!*\
+  !*** ./components sync \.ts$ ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./search-form/search-form-controller.ts\": \"./components/search-form/search-form-controller.ts\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./components sync recursive \\\\.ts$\";\n\n//# sourceURL=webpack:///./components_sync_\\.ts$?");
+
+/***/ }),
+
 /***/ "./components/search-form/search-form-controller.ts":
 /*!**********************************************************!*\
   !*** ./components/search-form/search-form-controller.ts ***!
@@ -4297,7 +4332,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ \"./styles.scss\");\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! stimulus */ \"../node_modules/stimulus/index.js\");\n/* harmony import */ var _components_search_form_search_form_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/search-form/search-form-controller */ \"./components/search-form/search-form-controller.ts\");\n\n\n\nvar application = stimulus__WEBPACK_IMPORTED_MODULE_1__[\"Application\"].start();\napplication.register(\"search-form\", _components_search_form_search_form_controller__WEBPACK_IMPORTED_MODULE_2__[\"default\"]); // const context = require.context('./components', true, /\\.ts$/);\n// application.load(definitionsFromContext(context));\n// console.log(definitionsFromContext(context));\n\nconsole.log(application);\n\n//# sourceURL=webpack:///./index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ \"./styles.scss\");\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! stimulus */ \"../node_modules/stimulus/index.js\");\n/* harmony import */ var stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! stimulus/webpack-helpers */ \"../node_modules/stimulus/webpack-helpers.js\");\n\n // import SearchFormController from './components/search-form/search-form-controller';\n\n\nvar application = stimulus__WEBPACK_IMPORTED_MODULE_1__[\"Application\"].start(); // application.register(\"search-form\", SearchFormController)\n\nvar context = __webpack_require__(\"./components sync recursive \\\\.ts$\");\n\napplication.load(Object(stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_2__[\"definitionsFromContext\"])(context)); // console.log(definitionsFromContext(context));\n\nconsole.log(application);\n\n//# sourceURL=webpack:///./index.ts?");
 
 /***/ }),
 
