@@ -22,7 +22,8 @@
 .search-form {
   display: grid;
   grid-template-columns: 1fr 1fr 150px;
-  grid-gap: 25px; }
+  grid-gap: 25px;
+  position: relative; }
   .search-form__field {
     border: 0;
     border-bottom: 1px solid #424242;
@@ -51,10 +52,12 @@
       color: white;
       transition: all 0.3s; }
   .search-form__error {
-    grid-column: 1/-1;
     font-size: 14px;
     color: #dd0b0b;
-    font-weight: bolder; }
+    font-weight: bolder;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
 
 .search-page .loader,
 .search-page .error {
