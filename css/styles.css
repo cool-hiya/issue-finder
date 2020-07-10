@@ -19,10 +19,12 @@
   100% {
     transform: rotate(360deg); } }
 
-.search-page .loader {
+.search-page .loader,
+.search-page .issue-list {
   display: none; }
 
-.search-page[data-search-page-loading="true"] .loader {
+.search-page[data-search-page-loading="true"] .loader,
+.search-page[data-search-page-loading="true"] .issue-list {
   display: block; }
 
 body {
