@@ -51,7 +51,8 @@
       color: white;
       transition: all 0.3s; }
   .search-form__error {
-    grid-column: 1/-1; }
+    grid-column: 1/-1;
+    font-size: 14px; }
 
 .search-page .loader,
 .search-page .error {
