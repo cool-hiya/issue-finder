@@ -40,10 +40,10 @@
   .search-form__submit {
     background-color: white;
     cursor: pointer;
-    border: 1px solid #424242; }
+    border: 1px solid #424242;
+    text-transform: uppercase; }
     .search-form__submit:hover {
-      background-color: #8be05a;
-      color: white; }
+      background-color: #0f0f0f; }
 
 .search-page .loader,
 .search-page .error {
