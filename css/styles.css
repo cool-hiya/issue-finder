@@ -19,10 +19,12 @@
   100% {
     transform: rotate(360deg); } }
 
-.error__text {
-  text-transform: uppercase;
-  margin-right: 10px;
-  color: #dd0b0b; }
+.error {
+  width: 100%; }
+  .error__text {
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #dd0b0b; }
 
 .issue {
   border: 1px solid #424242;
