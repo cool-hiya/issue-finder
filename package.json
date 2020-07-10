@@ -1,0 +1,50 @@
+{
+  "name": "issue-finder",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cool-hiya/issue-finder.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "gh-pages-webpack-plugin": "^1.0.2",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "pug-html-loader": "^1.1.5",
+    "sass-loader": "^8.0.2",
+    "stimulus": "^1.1.1",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "@types/webpack-env": "^1.15.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "rxjs": "^6.6.0"
+  },
+  "author": "Arina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cool-hiya/issue-finder/issues"
+  },
+  "homepage": "https://github.com/cool-hiya/issue-finder#readme"
+}

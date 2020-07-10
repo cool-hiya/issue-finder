@@ -1,0 +1,21 @@
+@import "./assets/styles/variables.scss";
+
+@import "./components/loader/loader.scss";
+@import "./components/error/error.scss";
+@import "./components/issue/issue.scss";
+@import "./components/issue-list/issue-list.scss";
+@import "./components/search-form/search-form.scss";
+@import "./pages/search-page/search-page.scss";
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: $c-gray;
+    overflow: scroll;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}

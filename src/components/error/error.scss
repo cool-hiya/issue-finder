@@ -1,0 +1,7 @@
+.error {
+    &__text {
+        text-transform: uppercase;
+        margin-right: 10px;
+        color: $c-red;
+    }
+}
