@@ -20,7 +20,7 @@
     transform: rotate(360deg); } }
 
 .error__text:after {
-  content: ":("; }
+  content: "&#128546;"; }
 
 .search-form {
   display: grid;
