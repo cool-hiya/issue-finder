@@ -19,8 +19,11 @@
   100% {
     transform: rotate(360deg); } }
 
-.search-page[data-search-page-loading="true"] {
-  background-color: blue; }
+.search-page .loader {
+  display: none; }
+
+.search-page[data-search-page-loading="true"] .loader {
+  display: block; }
 
 body {
   background-color: blueviolet; }
