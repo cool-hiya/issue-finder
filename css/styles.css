@@ -32,6 +32,11 @@
 .search-page[data-search-page-error="true"] .error {
   display: block; }
 
+.search-page__title {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: normal; }
+
 body {
   margin: 0;
   font-size: 18px;
