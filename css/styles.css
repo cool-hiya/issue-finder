@@ -47,7 +47,8 @@ body {
   margin: 0;
   font-size: 18px;
   font-family: sans-serif;
-  color: #424242; }
+  color: #424242;
+  text-transform: uppercase; }
 
 .container {
   max-width: 800px;
