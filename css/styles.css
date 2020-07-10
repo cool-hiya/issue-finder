@@ -20,7 +20,10 @@
     transform: rotate(360deg); } }
 
 .error__text {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: 10px;
+  color: #458d1b;
+  font-weight: bolder; }
 
 .search-form {
   display: grid;
