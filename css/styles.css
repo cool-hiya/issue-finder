@@ -33,6 +33,10 @@
     padding: 10px; }
     .search-form__field:focus {
       border-color: #8be05a; }
+    .search-form__field:-ms-input-placeholder {
+      text-transform: uppercase; }
+    .search-form__field::placeholder {
+      text-transform: uppercase; }
 
 .search-page .loader,
 .search-page .error {
