@@ -34,7 +34,9 @@
     font-size: 14px;
     text-transform: uppercase; }
   .issue__number {
-    margin-right: 15px; }
+    margin-right: 10px; }
+  .issue__date:before {
+    content: "opened at"; }
 
 .issue-list__container {
   display: grid;
