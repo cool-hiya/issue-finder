@@ -10,7 +10,7 @@
     margin: 8px;
     border-radius: 50%;
     border: 6px solid;
-    border-color: blue transparent blue transparent;
+    border-color: #8be05a transparent #8be05a transparent;
     animation: rotate 1.2s linear infinite; }
 
 @keyframes rotate {
