@@ -28,7 +28,7 @@
   border: 1px solid #424242;
   padding: 15px; }
 
-.issue-list {
+.issue-list__container {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr; }
