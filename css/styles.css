@@ -53,7 +53,8 @@
   .search-form__error {
     grid-column: 1/-1;
     font-size: 14px;
-    color: #8d1818; }
+    color: #8d1818;
+    font-weight: bold; }
 
 .search-page .loader,
 .search-page .error {
