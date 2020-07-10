@@ -52,7 +52,8 @@
       transition: all 0.3s; }
   .search-form__error {
     grid-column: 1/-1;
-    font-size: 14px; }
+    font-size: 14px;
+    color: #8d1818; }
 
 .search-page .loader,
 .search-page .error {
