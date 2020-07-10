@@ -37,10 +37,12 @@
   .issue__date:before {
     content: "opened at "; }
 
-.issue-list__container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr; }
+.issue-list {
+  width: 100%; }
+  .issue-list__container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr; }
 
 .search-form {
   display: grid;
