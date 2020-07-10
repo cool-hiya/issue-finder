@@ -1,12 +1,13 @@
 import {Controller} from 'stimulus';
 import Issue from '../../assets/models/issue.model';
 import IssueListController from '../../components/issue-list/issue-list-controller';
+import ErrorController from '../../components/error/error-controller';
 
 export default class SearchPageController extends Controller {
     [x: string]: any;
-    static targets = ['issueList'];
+    static targets = ['issueList', 'error'];
 
-    issues: Issue[];
+    issues: Issue[] = [];
 
     get issueListController(): IssueListController {
         return <IssueListController>this.application.getControllerForElementAndIdentifier(
@@ -15,23 +16,42 @@ export default class SearchPageController extends Controller {
         );
     }
 
+    get errorController(): ErrorController {
+        return <ErrorController>this.application.getControllerForElementAndIdentifier(
+            this.errorTarget,
+            'error'
+        );
+    }
+
     async search(e: CustomEvent) {
+        this.data.set('error', 'false');
         this.data.set('loading', 'true');
 
         const {name, repo} = e.detail;
 
-        const res = await fetch(`https://api.github.com/repos/${name}/${repo}/issues`);
-        let result = await res.json();
+        try {
+            const res = await fetch(`https://api.github.com/repos/${name}/${repo}/issues`);
+            let result = await res.json();
 
-        this.issues = result.map(({number, title, created_at}) => ({
-            number,
-            creationDate: created_at,
-            title
-        }));
+            if (result.message) {
+                throw new Error(result.message);
+            }
 
-        this.issueListController.updateIssues.next(this.issues);
+            this.issues = result.map(({number, title, created_at}) => ({
+                number,
+                creationDate: created_at,
+                title
+            }));
 
-        setTimeout(() => this.data.set('loading', 'false'), 100);
+            this.issueListController.updateIssues.next(this.issues);
+            setTimeout(() => this.data.set('loading', 'false'), 100);
+
+        } catch (e) {
+            this.data.set('error', 'true');
+            this.issueListController.updateIssues.next([]);
+            this.data.set('loading', 'false');
+            this.errorController.setText(e.message);
+        }
     }
 }
 
