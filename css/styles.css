@@ -28,7 +28,8 @@
     border-bottom: 1px solid #424242;
     outline: 0;
     padding: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    transition: all 1s; }
     .search-form__field:focus {
       border-color: #458d1b; }
     .search-form__field:-ms-input-placeholder {
@@ -42,7 +43,8 @@
     cursor: pointer;
     border: 1px solid #424242;
     text-transform: uppercase;
-    outline: 0; }
+    outline: 0;
+    transition: all 1s; }
     .search-form__submit:hover {
       background-color: #424242;
       color: white; }
