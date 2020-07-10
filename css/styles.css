@@ -43,7 +43,7 @@
     border: 1px solid #424242;
     text-transform: uppercase; }
     .search-form__submit:hover {
-      background-color: #383838; }
+      background-color: #404040; }
 
 .search-page .loader,
 .search-page .error {
