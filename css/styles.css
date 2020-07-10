@@ -34,7 +34,8 @@
 
 body {
   margin: 0;
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: sans-serif; }
 
 .container {
   max-width: 800px;
