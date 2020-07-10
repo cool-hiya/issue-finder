@@ -27,6 +27,9 @@
 .issue {
   border: 1px solid #424242;
   padding: 15px; }
+  .issue__title {
+    color: #458d1b;
+    font-weight: bolder; }
 
 .issue-list__container {
   display: grid;
