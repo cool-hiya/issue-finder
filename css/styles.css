@@ -48,7 +48,6 @@
   font-size: 35px;
   font-weight: normal;
   margin: 0;
-  padding: 50px 0;
   text-transform: uppercase; }
 
 .search-page__top {
@@ -64,5 +63,7 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box; }
 
