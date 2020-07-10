@@ -9,7 +9,7 @@
     height: 64px;
     margin: 8px;
     border-radius: 50%;
-    border: 6px solid red;
+    border: 6px solid;
     border-color: blue transparent blue transparent;
     animation: rotate 1.2s linear infinite; }
 
