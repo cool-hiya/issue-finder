@@ -5501,6 +5501,18 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 
 /***/ }),
 
+/***/ "./assets/core/controller-setup.ts":
+/*!*****************************************!*\
+  !*** ./assets/core/controller-setup.ts ***!
+  \*****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! stimulus */ \"../node_modules/stimulus/index.js\");\n/* harmony import */ var _components_search_form_search_form_controller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/search-form/search-form-controller */ \"./components/search-form/search-form-controller.ts\");\n/* harmony import */ var _components_issue_list_issue_list_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/issue-list/issue-list-controller */ \"./components/issue-list/issue-list-controller.ts\");\n/* harmony import */ var _components_error_error_controller__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/error/error-controller */ \"./components/error/error-controller.ts\");\n/* harmony import */ var _pages_search_page_search_page_controller__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../pages/search-page/search-page-controller */ \"./pages/search-page/search-page-controller.ts\");\n\n\n\n\n\nvar application = stimulus__WEBPACK_IMPORTED_MODULE_0__[\"Application\"].start();\nvar controllers = [{\n  id: 'search-form',\n  controller: _components_search_form_search_form_controller__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n}, {\n  id: 'search-page',\n  controller: _pages_search_page_search_page_controller__WEBPACK_IMPORTED_MODULE_4__[\"default\"]\n}, {\n  id: 'issue-list',\n  controller: _components_issue_list_issue_list_controller__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n}, {\n  id: 'error',\n  controller: _components_error_error_controller__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n}];\ncontrollers.forEach(function (_ref) {\n  var id = _ref.id,\n      controller = _ref.controller;\n  application.register(id, controller);\n});\n\n//# sourceURL=webpack:///./assets/core/controller-setup.ts?");
+
+/***/ }),
+
 /***/ "./components/error/error-controller.ts":
 /*!**********************************************!*\
   !*** ./components/error/error-controller.ts ***!
@@ -5545,7 +5557,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ \"./styles.scss\");\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! stimulus */ \"../node_modules/stimulus/index.js\");\n/* harmony import */ var _components_search_form_search_form_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/search-form/search-form-controller */ \"./components/search-form/search-form-controller.ts\");\n/* harmony import */ var _components_issue_list_issue_list_controller__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/issue-list/issue-list-controller */ \"./components/issue-list/issue-list-controller.ts\");\n/* harmony import */ var _components_error_error_controller__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/error/error-controller */ \"./components/error/error-controller.ts\");\n/* harmony import */ var _pages_search_page_search_page_controller__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/search-page/search-page-controller */ \"./pages/search-page/search-page-controller.ts\");\n\n\n\n\n\n\nvar application = stimulus__WEBPACK_IMPORTED_MODULE_1__[\"Application\"].start();\napplication.register(\"search-form\", _components_search_form_search_form_controller__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\napplication.register(\"search-page\", _pages_search_page_search_page_controller__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\napplication.register(\"issue-list\", _components_issue_list_issue_list_controller__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\napplication.register(\"error\", _components_error_error_controller__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\n\n//# sourceURL=webpack:///./index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ \"./styles.scss\");\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_core_controller_setup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/core/controller-setup */ \"./assets/core/controller-setup.ts\");\n\n\n\n//# sourceURL=webpack:///./index.ts?");
 
 /***/ }),
 
