@@ -21,7 +21,7 @@
 
 .search-form {
   display: grid;
-  grid-columns: repeat(1fr, 3); }
+  grid-template-columns: repeat(3, 1fr); }
   .search-form__field {
     border: 0;
     border-bottom: 1px solid #424242;
