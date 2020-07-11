@@ -151,13 +151,13 @@
 .app .error {
   display: none; }
 
-.app[data-search-page-loading="true"] .loader {
+.app[data-app-loading="true"] .loader {
   display: block; }
 
-.app[data-search-page-loading="true"] .issue-list {
+.app[data-app-loading="true"] .issue-list {
   display: none; }
 
-.app[data-search-page-error="true"] .error {
+.app[data-app-error="true"] .error {
   display: block; }
 
 .app__title {
