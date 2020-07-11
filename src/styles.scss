@@ -6,6 +6,7 @@
 @import "./app/components/issue-details/issue-details.scss";
 @import "./app/components/issue-list/issue-list.scss";
 @import "./app/components/search-form/search-form.scss";
+@import "./app/components/back/back.scss";
 @import "./app/app.scss";
 
 body {
@@ -13,11 +14,15 @@ body {
     font-size: 18px;
     font-family: sans-serif;
     color: $c-gray;
-    overflow: scroll;
+    overflow-y: scroll;
     min-width: 800px;
 }
 
+$container-width: 700px;
+$margin-offset: calc((100% - #{$container-width}) / 2);
+
 .centerer {
-    width: 700px;
-    padding: 0 calc((100% - 700px) / 2);
+    width: $container-width;
+    padding-left: $margin-offset;
+    padding-right: $margin-offset;
 }

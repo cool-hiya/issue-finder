@@ -24,6 +24,10 @@ export default class AppController extends Controller {
         );
     }
 
+    initialize() {
+        this.data.set('mode', 'default');
+    }
+
     get errorController(): ErrorController {
         return <ErrorController>this.application.getControllerForElementAndIdentifier(
             this.errorTarget,
@@ -81,6 +85,10 @@ export default class AppController extends Controller {
 
         this.issueDetailsController.updateData(issue);
         this.data.set('mode', 'details');
+    }
+
+    goBack() {
+        this.data.set('mode', 'default');
     }
 }
 

@@ -5,6 +5,13 @@
     }
 
     &[data-app-mode="details"] {
+        .app__issue-finder {
+            display: none;
+        }
+
+        .app__issue-details {
+            display: block;
+        }
     }
 
     &[data-app-loading="true"] {
@@ -21,6 +28,10 @@
         .error {
             display: block;
         }
+    }
+
+    &__issue-details {
+        display: none;
     }
 
     &__title {
