@@ -3,6 +3,7 @@
 @import "./components/loader/loader.scss";
 @import "./components/error/error.scss";
 @import "./components/issue/issue.scss";
+@import "./components/issue-details/issue-details.scss";
 @import "./components/issue-list/issue-list.scss";
 @import "./components/search-form/search-form.scss";
 @import "./pages/search-page/search-page.scss";
@@ -13,6 +14,7 @@ body {
     font-family: sans-serif;
     color: $c-gray;
     overflow: scroll;
+    min-width: 800px;
 }
 
 .centerer {

@@ -1,7 +1,10 @@
-.search-page {
+.app {
     .loader,
     .error {
         display: none;
+    }
+
+    &[data-search-page-mode="details"] {
     }
 
     &[data-search-page-loading="true"] {

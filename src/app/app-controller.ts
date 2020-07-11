@@ -1,11 +1,12 @@
 import {Controller} from 'stimulus';
-import Issue from '../../assets/models/issue.model';
-import IssueListController from '../../components/issue-list/issue-list-controller';
-import ErrorController from '../../components/error/error-controller';
+import Issue from '../assets/models/issue.model';
+import IssueListController from '../components/issue-list/issue-list-controller';
+import ErrorController from '../components/error/error-controller';
+import IssueDetailsController from '../components/issue-details/issue-details-controller';
 
-export default class SearchPageController extends Controller {
+export default class AppController extends Controller {
     [x: string]: any;
-    static targets = ['issueList', 'error'];
+    static targets = ['issueList', 'error', 'issueDetails'];
 
     issues: Issue[] = [];
 
@@ -13,6 +14,13 @@ export default class SearchPageController extends Controller {
         return <IssueListController>this.application.getControllerForElementAndIdentifier(
             this.issueListTarget,
             'issue-list'
+        );
+    }
+
+    get issueDetailsController(): IssueDetailsController {
+        return <IssueDetailsController>this.application.getControllerForElementAndIdentifier(
+            this.issueDetailsTarget,
+            'issue-details'
         );
     }
 
@@ -33,13 +41,12 @@ export default class SearchPageController extends Controller {
             const res = await fetch(`https://api.github.com/repos/${name}/${repo}/issues`);
             let result = await res.json();
 
-            console.log(result);
-
             if (result.message) {
                 throw new Error(result.message);
             }
 
-            this.issues = result.map(({number, title, created_at, user}) => ({
+            this.issues = result.map(({id, number, title, created_at, user, body, state, assignee}) => ({
+                id,
                 number,
                 creationDate: created_at,
                 title,
@@ -47,7 +54,10 @@ export default class SearchPageController extends Controller {
                     name: user.login,
                     avatar: user.avatar_url,
                     url: user.html_url
-                }
+                },
+                content: body,
+                status: state,
+                assignee
             }));
 
             this.issueListController.updateIssues.next(this.issues);
@@ -59,6 +69,18 @@ export default class SearchPageController extends Controller {
             this.data.set('loading', 'false');
             this.errorController.setText(e.message);
         }
+    }
+
+    showIssueDetails(e: CustomEvent) {
+        const {id} = e.detail;
+        const issue = this.issues.find(issue => issue.id === id);
+
+        if (!issue) {
+            return;
+        }
+
+        this.issueDetailsController.updateData(issue);
+        this.data.set('mode', 'details');
     }
 }
 
