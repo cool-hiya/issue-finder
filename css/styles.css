@@ -91,7 +91,10 @@
     .issue-details__content img {
       width: 100%; }
     .issue-details__content pre {
-      overflow: auto; }
+      overflow: auto;
+      padding: 10px;
+      color: white;
+      background-color: #458d1b; }
 
 .issue-list {
   width: 100%; }
