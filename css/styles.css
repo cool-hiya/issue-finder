@@ -50,7 +50,7 @@
     object-position: center;
     margin-right: 15px;
     border-radius: 50%;
-    box-shadow: 0 0 0 0 1px #424242; }
+    box-shadow: 0 0 1px 0 #424242; }
   .issue__author-name {
     color: inherit;
     margin-left: 5px; }
