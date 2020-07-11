@@ -89,7 +89,7 @@
     word-break: break-all; }
     .issue-details__content img {
       width: 100%; }
-    .issue-details__content code {
+    .issue-details__content pre {
       overflow: auto; }
 
 .issue-list {
