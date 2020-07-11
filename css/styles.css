@@ -81,7 +81,7 @@
     padding: 10px;
     font-size: 14px;
     transition: all 0.3s; }
-    .search-form__field:focus {
+    .search-form__field:focus, .search-form__field:hover {
       border-color: #458d1b;
       transition: all 0.3s; }
     .search-form__field:-ms-input-placeholder {
