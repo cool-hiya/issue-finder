@@ -86,7 +86,8 @@
     margin-top: 30px;
     padding: 20px;
     box-shadow: inset 0 0 2px 1px rgba(66, 66, 66, 0.5);
-    word-break: break-all; }
+    word-break: break-all;
+    font-size: 14px; }
     .issue-details__content img {
       width: 100%; }
     .issue-details__content pre {
