@@ -70,7 +70,9 @@
     -ms-flex-align: start;
         align-items: flex-start;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    position: sticky;
+    top: 0; }
   .issue-details__title {
     margin: 0;
     font-weight: bold;
