@@ -49,6 +49,9 @@
     object-position: center;
     margin-right: 15px;
     border-radius: 50%; }
+  .issue__author-name {
+    color: inherit;
+    margin-left: 5px; }
 
 .issue-list {
   width: 100%; }
