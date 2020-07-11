@@ -26,7 +26,8 @@
 
 .issue {
   border: 1px solid #424242;
-  padding: 15px; }
+  padding: 15px;
+  cursor: pointer; }
   .issue__title {
     color: #458d1b;
     margin-bottom: 10px; }
