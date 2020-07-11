@@ -1,8 +1,8 @@
 import {Controller} from 'stimulus';
-import Issue from '../assets/models/issue.model';
-import IssueListController from '../components/issue-list/issue-list-controller';
-import ErrorController from '../components/error/error-controller';
-import IssueDetailsController from '../components/issue-details/issue-details-controller';
+import Issue from './core/models/issue.model';
+import IssueListController from './components/issue-list/issue-list-controller';
+import ErrorController from './components/error/error-controller';
+import IssueDetailsController from './components/issue-details/issue-details-controller';
 
 export default class AppController extends Controller {
     [x: string]: any;

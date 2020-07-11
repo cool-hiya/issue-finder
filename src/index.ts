@@ -1,2 +1,2 @@
 import './styles.scss';
-import './assets/core/controller-setup';
+import './app/core/utils/controller-setup';

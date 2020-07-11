@@ -4,10 +4,10 @@
         display: none;
     }
 
-    &[data-search-page-mode="details"] {
+    &[data-app-mode="details"] {
     }
 
-    &[data-search-page-loading="true"] {
+    &[data-app-loading="true"] {
         .loader {
             display: block;
         }
@@ -17,7 +17,7 @@
         }
     }
 
-    &[data-search-page-error="true"] {
+    &[data-app-error="true"] {
         .error {
             display: block;
         }

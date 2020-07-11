@@ -5,7 +5,7 @@ import IssueListController from '../../components/issue-list/issue-list-controll
 import ErrorController from '../../components/error/error-controller';
 import IssueDetailsController from '../../components/issue-details/issue-details-controller';
 
-import AppController from '../../app/app-controller';
+import AppController from '../../app-controller';
 
 const application = Application.start();
 const controllers = [

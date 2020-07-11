@@ -1,12 +1,12 @@
-@import "./assets/styles/variables.scss";
+@import "./app/core/styles/variables.scss";
 
-@import "./components/loader/loader.scss";
-@import "./components/error/error.scss";
-@import "./components/issue/issue.scss";
-@import "./components/issue-details/issue-details.scss";
-@import "./components/issue-list/issue-list.scss";
-@import "./components/search-form/search-form.scss";
-@import "./pages/search-page/search-page.scss";
+@import "./app/components/loader/loader.scss";
+@import "./app/components/error/error.scss";
+@import "./app/components/issue/issue.scss";
+@import "./app/components/issue-details/issue-details.scss";
+@import "./app/components/issue-list/issue-list.scss";
+@import "./app/components/search-form/search-form.scss";
+@import "./app/app.scss";
 
 body {
     margin: 0;

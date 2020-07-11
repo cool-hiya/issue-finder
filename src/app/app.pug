@@ -1,8 +1,8 @@
-include ../../components/search-form/search-form.pug
-include ../../components/issue-list/issue-list.pug
-include ../../components/issue-details/issue-details.pug
-include ../../components/loader/loader.pug
-include ../../components/error/error.pug
+include ./components/search-form/search-form.pug
+include ./components/issue-list/issue-list.pug
+include ./components/issue-details/issue-details.pug
+include ./components/loader/loader.pug
+include ./components/error/error.pug
 
 +b.app(data-controller="app")
     +e.issue-finder
@@ -13,5 +13,5 @@ include ../../components/error/error.pug
             +issue-list()(data-target="app.issueList" data-action="issueClick->app#showIssueDetails")
             +loader()
             +error(data-target="app.error")
-    +e.issue-details
-        +issue-details()(data-target="app.issueDetails")
+    //- +e.issue-details
+    //-     +issue-details()(data-target="app.issueDetails")
