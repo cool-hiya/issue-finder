@@ -147,34 +147,34 @@
     left: 0;
     bottom: 20px; }
 
-.search-page .loader,
-.search-page .error {
+.app .loader,
+.app .error {
   display: none; }
 
-.search-page[data-search-page-loading="true"] .loader {
+.app[data-search-page-loading="true"] .loader {
   display: block; }
 
-.search-page[data-search-page-loading="true"] .issue-list {
+.app[data-search-page-loading="true"] .issue-list {
   display: none; }
 
-.search-page[data-search-page-error="true"] .error {
+.app[data-search-page-error="true"] .error {
   display: block; }
 
-.search-page__title {
+.app__title {
   font-size: 35px;
   font-weight: normal;
   margin: 0 0 50px;
   text-transform: uppercase;
   padding-top: 50px; }
 
-.search-page__top {
+.app__top {
   position: sticky;
   top: 0;
   background-color: white;
   z-index: 5;
   box-shadow: 0 2px 6px 0 rgba(66, 66, 66, 0.5); }
 
-.search-page__content {
+.app__content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
