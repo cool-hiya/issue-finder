@@ -70,7 +70,8 @@
 .issue-details__title {
   margin: 0;
   font-weight: bold;
-  color: #458d1b; }
+  color: #458d1b;
+  font-size: 25px; }
 
 .issue-details__status {
   text-transform: uppercase;
