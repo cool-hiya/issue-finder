@@ -28,10 +28,10 @@
   border: 1px solid #424242;
   padding: 15px;
   cursor: pointer;
-  transform: translateY(0);
+  transform: translateX(0);
   transition: all 0.3s; }
   .issue:hover {
-    transform: translateY(-5px);
+    transform: translateX(10px);
     transition: all 0.3s; }
   .issue__title {
     color: #458d1b;
