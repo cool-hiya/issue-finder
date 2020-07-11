@@ -184,6 +184,9 @@
       align-items: center;
   margin-top: 40px; }
 
+.search-page__issue-details {
+  width: 100%; }
+
 body {
   margin: 0;
   font-size: 18px;
