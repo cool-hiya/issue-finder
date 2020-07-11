@@ -31,7 +31,7 @@
   transform: translateY(0);
   transition: all 0.3s; }
   .issue:hover {
-    transform: translateY(5px);
+    transform: translateY(-5px);
     transition: all 0.3s; }
   .issue__title {
     color: #458d1b;
@@ -132,7 +132,8 @@
   position: sticky;
   top: 0;
   background-color: white;
-  padding: 50px 0; }
+  padding: 50px 0;
+  z-index: 5; }
 
 .search-page__content {
   display: -ms-flexbox;
