@@ -164,7 +164,8 @@
     text-transform: uppercase;
     outline: 0;
     transition: all 0.3s;
-    padding: 5px 10px;
+    width: 150px;
+    height: 37px;
     color: white; }
     .back__button:hover {
       background-color: white;
