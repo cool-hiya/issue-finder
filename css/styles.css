@@ -27,7 +27,12 @@
 .issue {
   border: 1px solid #424242;
   padding: 15px;
-  cursor: pointer; }
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all 0.3s; }
+  .issue:hover {
+    transform: translateY(5px);
+    transition: all 0.3s; }
   .issue__title {
     color: #458d1b;
     margin-bottom: 10px; }
