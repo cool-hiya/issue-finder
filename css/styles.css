@@ -151,6 +151,9 @@
 .app .error {
   display: none; }
 
+.app[data-app-mode="details"] .app__issue-finder {
+  display: none; }
+
 .app[data-app-loading="true"] .loader {
   display: block; }
 
