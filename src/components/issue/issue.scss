@@ -1,6 +1,14 @@
 .issue {
-    border: 1px solid $c-gray;
+    box-shadow: inset 0 0 2px 1px rgba($c-gray, 0.5);
     padding: 15px;
+    cursor: pointer;
+    transform: translateX(0);
+    transition: $transition;
+
+    &:hover {
+        transform: translateX(10px);
+        transition: $transition;
+    }
 
     &__title {
         color: $c-green;

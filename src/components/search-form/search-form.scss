@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 150px;
     grid-gap: 25px;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 
     &__field {
         border: 0;
@@ -13,7 +13,8 @@
         font-size: 14px;
         transition: $transition;
 
-        &:focus {
+        &:focus,
+        &:hover {
             border-color: $c-green;
             transition: $transition;
         }
@@ -45,6 +46,6 @@
         font-weight: bolder;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 20px;
     }
 }

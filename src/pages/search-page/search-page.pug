@@ -4,10 +4,10 @@ include ../../components/loader/loader.pug
 include ../../components/error/error.pug
 
 +b.search-page(data-controller="search-page")
-    +e.top
+    +e.top.centerer
         +e.H1.title Issue finder
         +search-form()(data-action="submit->search-page#search")
-    +e.content
+    +e.content.centerer
         +issue-list()(data-target="search-page.issueList")
         +loader()
         +error(data-target="search-page.error")
