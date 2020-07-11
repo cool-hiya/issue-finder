@@ -74,7 +74,9 @@
     position: sticky;
     top: 0;
     padding: 40px;
-    box-shadow: 0 2px 6px 0 rgba(66, 66, 66, 0.5); }
+    box-shadow: 0 2px 6px 0 rgba(66, 66, 66, 0.5);
+    z-index: 5;
+    background-color: white; }
   .issue-details__title {
     margin: 0;
     font-weight: bold;
