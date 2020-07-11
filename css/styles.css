@@ -61,6 +61,17 @@
     color: inherit;
     margin-left: 5px; }
 
+.issue-details__top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+
+.issue-details__status {
+  text-transform: uppercase;
+  font-size: 13px;
+  background-color: rgba(66, 66, 66, 0.5); }
+
 .issue-list {
   width: 100%; }
   .issue-list__container {
