@@ -153,7 +153,9 @@
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  box-shadow: 0 -2px 6px 0 rgba(66, 66, 66, 0.5); }
+  box-shadow: 0 -2px 6px 0 rgba(66, 66, 66, 0.5);
+  background-color: white;
+  z-index: 5; }
 
 .app .loader,
 .app .error {
