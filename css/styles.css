@@ -67,7 +67,9 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
-        align-items: flex-start; }
+        align-items: flex-start;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
   .issue-details__title {
     margin: 0;
     font-weight: bold;
