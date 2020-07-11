@@ -36,6 +36,11 @@
     margin-right: 10px; }
   .issue__date:before {
     content: "opened at "; }
+  .issue__author {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
 
 .issue-list {
   width: 100%; }
