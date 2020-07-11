@@ -142,7 +142,8 @@
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  margin-top: 40px; }
 
 body {
   margin: 0;
