@@ -152,8 +152,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   box-shadow: 0 -2px 6px 0 rgba(66, 66, 66, 0.5);
   background-color: white;
   z-index: 5; }
