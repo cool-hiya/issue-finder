@@ -1,8 +1,9 @@
 mixin issue-details()
-    +b.issue-details.centerer(data-controller="issue-details")&attributes(attributes)
+    +b.issue-details(data-controller="issue-details")&attributes(attributes)
         +e.top
             +e.P.title(data-target="issue-details.title")
             +e.P.status(data-target="issue-details.status")
-        +e.DIV.content(data-target="issue-details.content")
+        .centerer
+            +e.DIV.content(data-target="issue-details.content")
 
         
