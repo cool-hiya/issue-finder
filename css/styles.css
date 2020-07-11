@@ -150,7 +150,8 @@ body {
   font-size: 18px;
   font-family: sans-serif;
   color: #424242;
-  overflow: scroll; }
+  overflow: scroll;
+  min-width: 800px; }
 
 .centerer {
   width: 700px;
