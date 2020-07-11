@@ -29,10 +29,15 @@ export default class IssueListController extends Controller {
             const title = issue.querySelector('.issue__title');
             const number = issue.querySelector('.issue__number');
             const date = issue.querySelector('.issue__date');
+            const author = issue.querySelector('.issue__author-name');
+            const avatar = issue.querySelector('.issue__author-avatar');
 
             title.textContent = data.title;
             number.textContent = `#${data.number}`;
             date.textContent = new Date(Date.parse(data.creationDate)).toLocaleString();
+            author.textContent = data.user.name;
+            author.setAttribute('href', data.user.url);
+            avatar.setAttribute('src', data.user.avatar); 
 
             this.container.append(issue);
         });

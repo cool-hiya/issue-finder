@@ -33,14 +33,21 @@ export default class SearchPageController extends Controller {
             const res = await fetch(`https://api.github.com/repos/${name}/${repo}/issues`);
             let result = await res.json();
 
+            console.log(result);
+
             if (result.message) {
                 throw new Error(result.message);
             }
 
-            this.issues = result.map(({number, title, created_at}) => ({
+            this.issues = result.map(({number, title, created_at, user}) => ({
                 number,
                 creationDate: created_at,
-                title
+                title,
+                user: {
+                    name: user.login,
+                    avatar: user.avatar_url,
+                    url: user.html_url
+                }
             }));
 
             this.issueListController.updateIssues.next(this.issues);
