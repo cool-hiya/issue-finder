@@ -210,5 +210,6 @@ body {
 
 .centerer {
   width: 700px;
-  padding: 0 calc((100% - 700px) / 2); }
+  padding-left: calc((100% - $container-width) / 2);
+  padding-right: calc((100% - $container-width) / 2); }
 
