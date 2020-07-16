@@ -125,7 +125,9 @@
     outline: 0;
     padding: 10px;
     font-size: 14px;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    width: 100%;
+    box-sizing: border-box; }
     .search-form__field:focus, .search-form__field:hover {
       border-color: #458d1b;
       transition: all 0.3s; }
