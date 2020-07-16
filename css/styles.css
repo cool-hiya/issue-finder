@@ -147,12 +147,12 @@
     z-index: 3;
     max-height: 200px;
     overflow: auto;
-    width: 100%; }
+    width: 100%;
+    border: 1px solid rgba(66, 66, 66, 0.5); }
     .search-form__autocomplete li {
       cursor: pointer;
-      padding: 5px;
-      border-bottom: 1px solid rgba(66, 66, 66, 0.5);
-      font-size: 12px; }
+      padding: 10px;
+      font-size: 13px; }
   .search-form__error {
     font-size: 14px;
     color: #dd0b0b;
