@@ -4,6 +4,6 @@ mixin search-form()
         +e.field-wrapper 
             +e.INPUT.field(type="text" placeholder="User repo" data-target="search-form.repo" data-action="focus->search-form#focusRepoInput input->search-form#inputRepo")
             +e.UL.autocomplete( data-target="search-form.repoAutomplete" hidden)
-        +e.INPUT.field(type="text" placeholder="Assignee")
+        +e.INPUT.field(type="text" placeholder="Assignee" data-target="search-form.assignee" data-action="input->search-form#debounceSearch")
         +e.BUTTON.submit(type="submit" data-action="search-form#submit") Search
         +e.error(data-target="search-form.error" hidden)

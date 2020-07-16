@@ -39,10 +39,11 @@ export default class AppController extends Controller {
         this.data.set('error', 'false');
         this.data.set('loading', 'true');
 
-        const {name, repo} = e.detail;
+        const {name, repo, assignee} = e.detail;
 
         try {
-            const res = await fetch(`https://api.github.com/repos/${name}/${repo}/issues`);
+            const url = `https://api.github.com/repos/${name}/${repo}/issues${assignee ? `?assignee=${assignee}` : ``}`;
+            const res = await fetch(url);
             let result = await res.json();
 
             if (result.message) {

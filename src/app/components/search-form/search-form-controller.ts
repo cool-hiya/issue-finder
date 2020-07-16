@@ -1,9 +1,10 @@
 import {Controller} from 'stimulus';
 import SearchQuery from '../../core/models/search-query.model';
+import debounce from '../../core/utils/debounce';
 
 export default class SearchFormController extends Controller {
     [x: string]: any;
-    static targets = ['name', 'repo', 'error', 'repoAutomplete'];
+    static targets = ['name', 'repo', 'error', 'repoAutomplete', 'assignee'];
     searchQuery: SearchQuery;
     repos: string[] = [];
     state = {
@@ -30,12 +31,20 @@ export default class SearchFormController extends Controller {
         return this.errorTarget;
     }
 
+    get assignee(): string {
+        return this.assigneeTarget.value;
+    }
+
     get isValidForm(): boolean {
         return !!(this.name && this.repo);
     }
 
     get hasRepos(): boolean {
         return !!this.repos.length;
+    }
+
+    initialize() {
+        this.debounceSearch = debounce(() => this.search(), 500);
     }
 
     submit(e: Event) {
@@ -54,7 +63,8 @@ export default class SearchFormController extends Controller {
     search() {
         this.searchQuery = {
             name: this.name,
-            repo: this.repo
+            repo: this.repo,
+            assignee: this.assignee
         }
 
         this.element.dispatchEvent(new CustomEvent('submit', {
