@@ -149,7 +149,8 @@
     overflow: auto;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 0 0 1px rgba(66, 66, 66, 0.5); }
+    box-shadow: 0 0 0 1px rgba(66, 66, 66, 0.5);
+    background-color: white; }
     .search-form__autocomplete li {
       cursor: pointer;
       padding: 10px;
