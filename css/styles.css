@@ -146,8 +146,10 @@
     list-style-type: none;
     z-index: 3;
     max-height: 200px;
-    overflow: auto; }
+    overflow: auto;
+    width: 100%; }
     .search-form__autocomplete li {
+      width: 100%;
       cursor: pointer;
       padding: 5px;
       border-bottom: 1px solid #424242; }
