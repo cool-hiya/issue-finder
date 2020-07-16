@@ -1,6 +1,6 @@
 import {Controller} from 'stimulus';
 import marked from 'marked';
-import Issue from '../../assets/models/issue.model';
+import Issue from '../../core/models/issue.model';
 
 export default class IssueDetailsController extends Controller {
     [x: string]: any;

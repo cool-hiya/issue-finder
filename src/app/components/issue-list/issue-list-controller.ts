@@ -1,7 +1,7 @@
 import {Controller} from 'stimulus';
 import {Subject} from "rxjs";
 
-import Issue from '../../assets/models/issue.model';
+import Issue from '../../core/models/issue.model';
 
 export default class IssueListController extends Controller {
     [x: string]: any;

@@ -1,5 +1,5 @@
 import {Controller} from 'stimulus';
-import SearchQuery from '../../assets/models/search-query.model';
+import SearchQuery from '../../core/models/search-query.model';
 
 export default class SearchFormController extends Controller {
     [x: string]: any;
