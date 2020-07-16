@@ -144,7 +144,9 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    z-index: 3; }
+    z-index: 3;
+    max-height: 200px;
+    overflow: auto; }
     .search-form__autocomplete li {
       cursor: pointer;
       padding: 5px;
