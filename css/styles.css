@@ -250,12 +250,6 @@ body {
   padding-left: calc((100% - 700px) / 2);
   padding-right: calc((100% - 700px) / 2); }
 
-::-webkit-scrollbar-button {
-  background-image: url("");
-  background-repeat: no-repeat;
-  width: 5px;
-  height: 0px; }
-
 ::-webkit-scrollbar-track {
   background-color: #ecedee; }
 
