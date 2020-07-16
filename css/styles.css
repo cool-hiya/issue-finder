@@ -159,7 +159,7 @@
       transition: all 0.3s;
       box-shadow: 0 -1px 0 0 rgba(66, 66, 66, 0.5); }
       .search-form__autocomplete li:hover {
-        background-color: rgba(66, 66, 66, 0.3); }
+        background-color: rgba(66, 66, 66, 0.1); }
   .search-form__error {
     font-size: 14px;
     color: #dd0b0b;
