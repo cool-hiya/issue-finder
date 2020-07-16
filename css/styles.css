@@ -142,6 +142,10 @@
     padding: 0;
     margin: 0;
     list-style-type: none; }
+    .search-form__autocomplete li {
+      cursor: pointer;
+      padding: 5px;
+      border-bottom: 1px solid #424242; }
   .search-form__error {
     font-size: 14px;
     color: #dd0b0b;
