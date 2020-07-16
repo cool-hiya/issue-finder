@@ -142,17 +142,6 @@
     padding: 0;
     margin: 0;
     list-style-type: none; }
-  .search-form__submit {
-    background-color: white;
-    cursor: pointer;
-    border: 1px solid #424242;
-    text-transform: uppercase;
-    outline: 0;
-    transition: all 0.3s; }
-    .search-form__submit:hover {
-      background-color: #424242;
-      color: white;
-      transition: all 0.3s; }
   .search-form__error {
     font-size: 14px;
     color: #dd0b0b;
