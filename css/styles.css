@@ -113,47 +113,51 @@
     grid-gap: 20px;
     grid-template-columns: 1fr; }
 
-.search-form {
+.search-form__form {
   display: grid;
   grid-template-columns: 1fr 1fr 150px;
   grid-gap: 25px;
   position: relative;
   padding-bottom: 40px; }
-  .search-form__field {
-    border: 0;
-    border-bottom: 1px solid #424242;
-    outline: 0;
-    padding: 10px;
-    font-size: 14px;
+
+.search-form__field {
+  border: 0;
+  border-bottom: 1px solid #424242;
+  outline: 0;
+  padding: 10px;
+  font-size: 14px;
+  transition: all 0.3s; }
+  .search-form__field:focus, .search-form__field:hover {
+    border-color: #458d1b;
     transition: all 0.3s; }
-    .search-form__field:focus, .search-form__field:hover {
-      border-color: #458d1b;
-      transition: all 0.3s; }
-    .search-form__field:-ms-input-placeholder {
-      text-transform: uppercase;
-      font-size: 12px; }
-    .search-form__field::placeholder {
-      text-transform: uppercase;
-      font-size: 12px; }
-  .search-form__field-wrapper {
-    position: relative; }
-  .search-form__autocomplete {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    z-index: 3; }
-    .search-form__autocomplete li {
-      cursor: pointer;
-      padding: 5px;
-      border-bottom: 1px solid #424242; }
-  .search-form__error {
-    font-size: 14px;
-    color: #dd0b0b;
-    font-weight: bolder;
-    position: absolute;
-    left: 0;
-    bottom: 20px; }
+  .search-form__field:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-size: 12px; }
+  .search-form__field::placeholder {
+    text-transform: uppercase;
+    font-size: 12px; }
+
+.search-form__field-wrapper {
+  position: relative; }
+
+.search-form__autocomplete {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  z-index: 3; }
+  .search-form__autocomplete li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #424242; }
+
+.search-form__error {
+  font-size: 14px;
+  color: #dd0b0b;
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
+  bottom: 20px; }
 
 .back {
   position: fixed;
