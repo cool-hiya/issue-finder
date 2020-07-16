@@ -135,6 +135,12 @@
     .search-form__field::placeholder {
       text-transform: uppercase;
       font-size: 12px; }
+  .search-form__field-wrapper {
+    position: relative; }
+  .search-form__autocomplete {
+    position: absolute;
+    padding: 0;
+    margin: 0; }
   .search-form__submit {
     background-color: white;
     cursor: pointer;
