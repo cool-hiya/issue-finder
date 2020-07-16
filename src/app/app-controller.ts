@@ -49,6 +49,10 @@ export default class AppController extends Controller {
                 throw new Error(result.message);
             }
 
+            if (!result.length) {
+                throw new Error('No issues found');
+            }
+
             this.issues = result.map(({id, number, title, created_at, user, body, state, assignee}) => ({
                 id,
                 number,

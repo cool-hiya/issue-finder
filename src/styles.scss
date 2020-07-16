@@ -26,3 +26,22 @@ $margin-offset: calc((100% - #{$container-width}) / 2);
     padding-left: $margin-offset;
     padding-right: $margin-offset;
 }
+
+/** Scroll styles **/
+
+::-webkit-scrollbar-track {
+    background-color: $c-white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: rgba($c-gray, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba($c-gray, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
