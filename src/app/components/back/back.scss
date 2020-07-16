@@ -1,0 +1,28 @@
+.back {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 40px;
+    box-shadow: 0 -2px 6px 0 rgba($c-gray, 0.5);
+    background-color: $c-white;
+    z-index: 5;
+
+    &__button{
+        background-color: $c-gray;
+        cursor: pointer;
+        border: 1px solid $c-gray;
+        text-transform: uppercase;
+        outline: 0;
+        transition: $transition;
+        width: 120px;
+        height: 37px;
+        color: $c-white;
+
+        &:hover {
+            background-color: $c-white;
+            color: $c-gray;
+            transition: $transition;
+            border-color: $c-gray;
+        }
+    }
+}

@@ -1,21 +1,47 @@
-@import "./assets/styles/variables.scss";
+@import "./app/core/styles/variables.scss";
 
-@import "./components/loader/loader.scss";
-@import "./components/error/error.scss";
-@import "./components/issue/issue.scss";
-@import "./components/issue-list/issue-list.scss";
-@import "./components/search-form/search-form.scss";
-@import "./pages/search-page/search-page.scss";
+@import "./app/components/loader/loader.scss";
+@import "./app/components/error/error.scss";
+@import "./app/components/issue/issue.scss";
+@import "./app/components/issue-details/issue-details.scss";
+@import "./app/components/issue-list/issue-list.scss";
+@import "./app/components/search-form/search-form.scss";
+@import "./app/components/back/back.scss";
+@import "./app/app.scss";
 
 body {
     margin: 0;
     font-size: 18px;
     font-family: sans-serif;
     color: $c-gray;
-    overflow: scroll;
+    overflow-y: scroll;
+    min-width: 800px;
 }
 
-.container {
-    max-width: 700px;
-    margin: 0 auto;
+$container-width: 700px;
+$margin-offset: calc((100% - #{$container-width}) / 2);
+
+.centerer {
+    width: $container-width;
+    padding-left: $margin-offset;
+    padding-right: $margin-offset;
+}
+
+/** Scroll styles **/
+
+::-webkit-scrollbar-track {
+    background-color: $c-white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: rgba($c-gray, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba($c-gray, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
 }

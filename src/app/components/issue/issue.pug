@@ -1,0 +1,10 @@
+mixin issue()
+    +b.issue      
+        +e.title
+        +e.details
+            +e.SPAN.number
+            +e.SPAN.date
+        +e.author
+            +e.IMG.author-avatar
+            +e.P.author-text By
+            +e.A.author-name(target="_blank")
