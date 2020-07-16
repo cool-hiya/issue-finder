@@ -140,7 +140,8 @@
   .search-form__autocomplete {
     position: absolute;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    list-style-type: none; }
   .search-form__submit {
     background-color: white;
     cursor: pointer;
