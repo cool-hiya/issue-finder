@@ -140,6 +140,9 @@
 .search-form__field-wrapper {
   position: relative; }
 
+.search-form__submit {
+  display: none; }
+
 .search-form__autocomplete {
   position: absolute;
   padding: 0;
