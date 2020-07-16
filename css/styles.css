@@ -136,9 +136,7 @@
       text-transform: uppercase;
       font-size: 12px; }
   .search-form__field-wrapper {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex; }
+    position: relative; }
   .search-form__submit {
     display: none; }
   .search-form__autocomplete {
