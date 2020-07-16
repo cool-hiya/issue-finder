@@ -256,7 +256,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
-  background-color: rgba(66, 66, 66, 0.4); }
+  background-color: rgba(66, 66, 66, 0.6); }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(66, 66, 66, 0.8); }
